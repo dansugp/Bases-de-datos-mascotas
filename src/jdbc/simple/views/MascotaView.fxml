@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="494.0" prefWidth="505.0" style="-fx-background-color: #FFCCFD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jdbc.simple.controllers.MascotaController">
+   <children>
+      <ListView fx:id="lvMascotas" layoutX="14.0" layoutY="222.0" prefHeight="134.0" prefWidth="204.0" />
+      <Button layoutX="14.0" layoutY="182.0" mnemonicParsing="false" onAction="#handleListarMascotasBtn" text="Listar Mascotas" />
+      <Label layoutX="24.0" layoutY="20.0" text="ID" />
+      <Label layoutX="97.0" layoutY="20.0" text="Nombre" />
+      <Label layoutX="24.0" layoutY="80.0" text="Edad" />
+      <TextField fx:id="txtID" layoutX="24.0" layoutY="37.0" prefHeight="25.0" prefWidth="60.0" />
+      <TextField fx:id="txtNombre" layoutX="97.0" layoutY="37.0" prefHeight="25.0" prefWidth="115.0" />
+      <TextField fx:id="txtEdad" layoutX="24.0" layoutY="97.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtDueño" layoutX="97.0" layoutY="97.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="97.0" layoutY="80.0" text="Nombre dueño" />
+      <Button layoutX="147.0" layoutY="135.0" mnemonicParsing="false" onAction="#handleAgregarBtn" text="Agregar" />
+      <Button layoutX="226.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleEliminarBtn" prefHeight="25.0" prefWidth="80.0" text="Eliminar" />
+      <Button layoutX="226.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleActualizarBtn" text="Actualizar" />
+      <Label layoutX="22.0" layoutY="375.0" text="ID" />
+      <Label layoutX="95.0" layoutY="375.0" text="Nombre" />
+      <Label layoutX="22.0" layoutY="435.0" text="Edad" />
+      <TextField fx:id="txtIDA" editable="false" layoutX="22.0" layoutY="392.0" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #ffeaa7;" />
+      <TextField fx:id="txtNombreA" editable="false" layoutX="95.0" layoutY="392.0" prefHeight="25.0" prefWidth="115.0" />
+      <TextField fx:id="txtEdadA" editable="false" layoutX="22.0" layoutY="452.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField fx:id="txtDueñoA" editable="false" layoutX="103.0" layoutY="452.0" prefHeight="25.0" prefWidth="115.0" />
+      <Label layoutX="95.0" layoutY="435.0" text="Nombre dueño" />
+      <Button fx:id="btnGuardar" disable="true" layoutX="226.0" layoutY="452.0" mnemonicParsing="false" onAction="#handleGuardarBtn" text="Guardar" />
+      <Button layoutX="226.0" layoutY="277.0" mnemonicParsing="false" onAction="#handleDetallesBtn" text="Cargar Detalles" />
+      <ImageView fitHeight="106.0" fitWidth="232.0" layoutX="266.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../mascotas.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtEspecie" layoutX="240.0" layoutY="37.0" prefHeight="25.0" prefWidth="122.0" />
+      <Label layoutX="242.0" layoutY="20.0" text="Especie" />
+      <Label layoutX="239.0" layoutY="375.0" text="Especie" />
+      <TextField fx:id="txtEspecieA" layoutX="232.0" layoutY="392.0" />
+   </children>
+</AnchorPane>
